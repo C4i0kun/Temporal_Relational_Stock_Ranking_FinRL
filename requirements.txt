@@ -1,0 +1,4 @@
+numpy
+pytorch
+torch_geometric
+networkx
