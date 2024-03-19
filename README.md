@@ -10,6 +10,15 @@ The repository is organized as follows:
     - `edge_indexes`: Folder containing `edge_index` numpy arrays in COO format (compatible with [PyG](https://pyg.org/)).
     - `gephi_visualizations`: Folder containing `.gexf` files to visualize the graphs in [Gephi](https://gephi.org/).
 - `scripts`: Folder containing python notebooks with scripts to generate FinRL-compatible data.
+- `temporal_data`: Folder containing a `tar.gz` file. Extract the file (for example, with the command `tar -zxvf temporal_data.tar.gz`) to access `.csv` files containing dataframes with normalized price values of stocks.
+
+## Understanding temporal data
+
+The temporal data contains the time series of open, high, low and close prices and volume of the stocks (columns `open`, `high`, `low`, `close`). In addition to that, there is a `day` column representing the day that price was observed and a `tic` column with the name of the stock.
+
+## Visualizing graphs
+
+To be able to visualize the graph structures (`.gexf` files), you need to install Gephi. Check their [official website](https://gephi.org/) for more information.
 
 ## Running scripts
 
@@ -24,10 +33,6 @@ Then, you need to clone [Temporal_Relational_Stock_Ranking](https://github.com/f
 ```bash
 git clone https://github.com/fulifeng/Temporal_Relational_Stock_Ranking.git
 ```
-
-## Visualizing graphs
-
-To be able to visualize the graph structures, you need to install Gephi. Check their [official website](https://gephi.org/) for more information.
 
 ## Citations in research
 
