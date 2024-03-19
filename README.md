@@ -10,7 +10,7 @@ The repository is organized as follows:
     - `edge_indexes`: Folder containing `edge_index` numpy arrays in COO format (compatible with [PyG](https://pyg.org/)).
     - `gephi_visualizations`: Folder containing `.gexf` files to visualize the graphs in [Gephi](https://gephi.org/).
 - `scripts`: Folder containing python notebooks with scripts to generate FinRL-compatible data.
-- `temporal_data`: Folder containing a `tar.gz` file. Extract the file (for example, with the command `tar -zxvf temporal_data.tar.gz`) to access `.csv` files containing dataframes with normalized price values of stocks.
+- `temporal_data`: Folder containing two `tar.gz` files with raw data (data with invalid values inherited from the original database) and processed data. Extract the files (for example, with the command `tar -zxvf temporal_data_raw.tar.gz`) to access `.csv` files containing dataframes with normalized price values of stocks. The processed data considers that missing values in the time series are equal to the values of the last timestamp. Additionaly, if the first value of the time series is missing, it's assumed that it's equal to the value of the next timestamp.
 
 ## Understanding temporal data
 
